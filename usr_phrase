@@ -7,5 +7,5 @@ read phrase
 word_count=$(echo "$phrase" | wc -w)
 whitespace_count=$(echo -n "$phrase" | tr -cd '[:space:]' | wc -c)
 
-echo "Number of words in the phrase: $word_count"
-echo "Number of whitespace characters: $whitespace_count"
+echo "The number of words is $word_count"
+echo "the number of whitespace characters is $whitespace_count"
