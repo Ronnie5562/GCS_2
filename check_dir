@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#ask for a file  path
+read -p "Enter a path: " path
+
+if [ -d "$path" ]; then
+    ls "$path"
+else
+    read -p "Enter a file path: " file_path
+    if [ -d "$file_path" ]; then
+        ls "$file_path"
+    else
+        echo "$file_path is not a directory."
+    fi
+fi
+
